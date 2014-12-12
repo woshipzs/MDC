@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="regions">
+        <item>Central</item>
+        <item>Kansas City</item>
+        <item>Northeast</item>
+        <item>Northwest</item>
+        <item>Ozark</item>
+        <item>Southeast</item>
+        <item>Southwest</item>
+        <item>St. Louis</item>
+        <item>Select a region</item>
+    </string-array>
+    <string-array name="precip">
+        <item>None</item>
+        <item>Rain</item>
+        <item>Mixed</item>
+        <item>Sleet</item>
+        <item>Snow</item>
+        <item>Select One</item>
+    </string-array>
+    <string-array name="weather">
+        <item>Sunny</item>
+        <item>Partly Sunny</item>
+        <item>Partly Cloudy</item>
+        <item>Cloudy</item>
+        <item>Select One</item>
+    </string-array>
+    <string-array name="temp">
+        <item>Very Cold</item>
+        <item>Cold</item>
+        <item>Mild</item>
+        <item>Warm</item>
+        <item>Hot</item>
+        <item>Very Hot</item>
+        <item>Select One</item>
+    </string-array>
+    <string-array name="how_often">
+        <item>Always</item>
+        <item>Often</item>
+        <item>Seldom</item>
+        <item>Never</item>
+        <item>Select One</item>
+    </string-array>
+</resources>

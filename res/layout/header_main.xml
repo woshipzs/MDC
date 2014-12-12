@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="50dp"
+            android:text="Weather: "
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/weather"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_alignBottom="@id/tv1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@id/tv1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv1"
+            android:layout_below="@id/tv1"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Temperature: "
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/temp"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_alignBottom="@id/tv2"
+            android:layout_alignLeft="@id/weather"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/tv2"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv2"
+            android:layout_below="@id/tv2"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Precipitation: "
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/precipitation"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_alignBottom="@id/tv3"
+            android:layout_alignLeft="@id/temp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/tv3"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Next"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="7"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/survey_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textSize="20sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/vehicle_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="270dp"
+            android:gravity="center"
+            android:text="ADD VEHICLE"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vehicle_total"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/vehicle_add"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="40sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/vehicle_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/vehicle_add"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/vehicle_total"
+            android:gravity="center"
+            android:text="sub"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/endtimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/vehicle_sub"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

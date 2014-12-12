@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/gson_lb"/>
+	<classpathentry kind="lib" path="libs/apache-httpcomponents-httpclient.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Zeshan/workspace/MDC/libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Zeshan/workspace/MDC/libs/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Zeshan/Downloads/gson-2.3.jar" sourcepath="C:/Users/Zeshan/Downloads/gson-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Zeshan/Downloads/gson-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/refuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Refused"
+        android:textColor="#FF0000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/refuse"
+        android:layout_marginBottom="10dp"
+        android:text="Next Page"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/prev_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Prev Page"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    
+    <TextView android:id="@+id/interviewee_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Unsafe/Unethical Behavior? "
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/how_often"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:text="What Behaviors? "
+        android:textSize="30sp" />
+    
+    <CheckBox
+        android:id="@+id/litter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView2"
+        android:text=" Litter/Trash"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/vandalism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/litter"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/litter"
+        android:text=" Vandalism"
+        android:textSize="20sp" />
+    
+    <CheckBox
+        android:id="@+id/downrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/litter"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@id/vandalism"
+        android:text=" Shooting While Others\n Are Down Range"
+        android:textSize="20sp" />
+    
+    <CheckBox
+        android:id="@+id/drunk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/litter"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/litter"
+        android:text=" Drunkenness Etc."
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/auto_fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/drunk"
+        android:layout_alignLeft="@id/vandalism"
+        android:layout_below="@id/vandalism"
+        android:text=" Automatic-fire"
+        android:textSize="20sp" />
+    
+    <CheckBox
+        android:id="@+id/move_downrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/drunk"
+        android:layout_alignLeft="@id/downrange"
+        android:layout_below="@id/downrange"
+        android:text=" Moving Downrange\n(to be closer to target)"
+        android:textSize="20sp" />
+    
+    <CheckBox
+        android:id="@+id/unap_tar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/litter"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/drunk"
+        android:text=" Unapproved Targets"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/ex_tar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/unap_tar"
+        android:layout_alignLeft="@id/vandalism"
+        android:layout_below="@id/auto_fire"
+        android:text=" Explosive Targets"
+        android:textSize="20sp" />
+    
+    <CheckBox
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/unap_tar"
+        android:layout_alignLeft="@id/downrange"
+        android:layout_below="@id/move_downrange"
+        android:text=" Other"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="320dp"
+        android:text="Ever Kept Away? "
+        android:layout_marginBottom="50dp"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/kept_away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView3"
+        android:layout_marginTop="295dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Done with party"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next_interview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/done"
+        android:layout_marginBottom="10dp"
+        android:text="Next Person"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/prev_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Prev Page"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    
+    <TextView android:id="@+id/interviewee_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Comments:"
+        android:textSize="30sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/textView1"
+        android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+        android:layout_marginLeft="130dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" >
+    </EditText>
+"
+
+    <CheckBox
+        android:id="@+id/emergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_marginRight="100dp"
+        android:layout_toLeftOf="@id/next_interview"
+        android:text="Notify Manager"
+        android:textSize="20sp" />
+
+</RelativeLayout>

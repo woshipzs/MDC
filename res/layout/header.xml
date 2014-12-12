@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:text="Weather: "
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/weather"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/tv1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/tv1"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv1"
+        android:layout_below="@id/tv1"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="Temperature: "
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/temp"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/tv2"
+        android:layout_alignLeft="@id/weather"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/tv2"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv2"
+        android:layout_below="@id/tv2"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="Precipitation: "
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/precipitation"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/tv3"
+        android:layout_alignLeft="@id/temp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/tv3"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:text="Next"
+        android:textSize="40sp" />
+
+</RelativeLayout>
